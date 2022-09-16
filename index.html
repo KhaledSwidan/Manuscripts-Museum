@@ -11,9 +11,17 @@
 
   <body>
 
-    <h1 id="mainHead">Manuscripts Museum <br> Bibliotheca Alexandrina</h1>
+    <h1 id="mainHead">
+      Manuscripts Museum <br> Bibliotheca Alexandrina
+      <img src="./logo-fancy.svg" alt="" srcset="" id="imgLogo">
+    </h1>
 
-    <div class="whiteSpace">
+    <button type="button" class="discoverMore">
+      <i></i>
+      Discover More!
+    </button>
+
+    <div class="whiteSpace" id="whiteSpace">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -34,20 +42,98 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="test">
+                    <h2>Welcome! || scroll horizontally 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quas iste molestiae debitis
+                      exercitationem ducimus vel sit dicta odio reprehenderit. Fugiat eaque doloribus culpa blanditiis
+                      eos
+                      at. Sit, nisi eaque!</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
           <div class="swiper-slide">
             <div class="swiper mySwiper2">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="test">
-                    <h2>Welcome! || scroll horizontally</h2>
+                    <h2>Welcome! || scroll horizontally 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quas iste molestiae debitis
+                      exercitationem ducimus vel sit dicta odio reprehenderit. Fugiat eaque doloribus culpa blanditiis
+                      eos
+                      at. Sit, nisi eaque!</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="test">
+                    <h2>Welcome! || scroll horizontally 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quas iste molestiae debitis
+                      exercitationem ducimus vel sit dicta odio reprehenderit. Fugiat eaque doloribus culpa blanditiis
+                      eos
+                      at. Sit, nisi eaque!</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="test">
+                    <h2>Welcome! || scroll horizontally 4</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quas iste molestiae debitis
                       exercitationem ducimus vel sit dicta odio reprehenderit. Fugiat eaque doloribus culpa blanditiis
                       eos
@@ -166,12 +252,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./anime.js"></script>
     <script>
-      const mainHead = document.getElementById("mainHead");
+      const minHead = document.getElementById("mainHead");
       anime({
         targets: mainHead,
-        translateX: [-1000, 0],
-        duration: 1000,
-        delay: 500
+        translateX: 250,
+        endDelay: 1000,
+        direction: 'alternate'
       });
     </script>
     <script type="module">
