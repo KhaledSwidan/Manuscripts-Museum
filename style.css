@@ -13,11 +13,14 @@ body{
   height: 100vh;
   position: relative;
 }
+#mainHead{
+  text-align: center;
+}
 .whiteSpace {
   height: 50vh;
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 15%;
   box-shadow: 0 0 10px #fff;
   background-color: rgb(255 255 255 / 40%);
 }
@@ -65,7 +68,6 @@ body{
   border: 1px solid #fff;
   border-radius: 0.37rem;
   padding: 0.3rem 0.5rem;
-  height: 11rem;
   position: absolute;
   bottom: 0.4rem;
   left: 0;
@@ -73,6 +75,12 @@ body{
   z-index: 1;
   box-shadow: 0 0 6px #eee;
   background-color: rgb(0 0 0 / 75%);
+  transition: .5s all ease-in-out;
+  overflow: hidden;
+}
+.mainTimeLine:hover{
+  height: 11rem;
+  transition: .5s all ease-in-out;
 }
 .timeLine {
   width: 100%;
@@ -90,6 +98,31 @@ body{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+.timeLine::after{
+  content: attr(data-work);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(51 96 209);
+  width: calc(100% - 10px);
+  height: calc(100% - 7px);
+  font-weight: bold;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  position: absolute;
+  bottom: -100px;
+}
+.timeLine:hover:after{
+    transform: translate(0rem, 6.5rem);
+    position: absolute;
+    bottom: 0;
+    border-radius: 0.3rem;
+    height: 4.5rem;
+    width: 12rem;
 }
 .timeLine label,
 .timeLine select{
@@ -114,41 +147,56 @@ body{
 }
 .timeLine.timeLine-one::before {
   background-color: rgb(255, 0, 0);
-  width: 20rem;
   bottom: -25px;
+  transition: .5s all ease-in-out;
 }
 .timeLine.timeLine-one:hover::before {
   box-shadow: 0 0 10px rgb(255, 0, 0);
+  width: 20rem;
+  transition: .5s all ease-in-out;
 }
 .timeLine.timeLine-two::before {
   background-color: rgb(111, 0, 255);
-  width: 15rem;
-  bottom: -45px;
+  bottom: -25px;
+  transition: .5s all ease-in-out;
 }
 .timeLine.timeLine-two:hover::before {
   box-shadow: 0 0 10px rgb(111, 0, 255);
+  width: 15rem;
+  transition: .5s all ease-in-out;
 }
 .timeLine.timeLine-three::before {
   background-color: rgb(255, 0, 149);
-  width: 22rem;
-  bottom: -65px;
+  bottom: -25px;
+  transition: .5s all ease-in-out;
 }
 .timeLine.timeLine-three:hover::before {
   box-shadow: 0 0 10px rgb(255, 0, 149);
+  width: 22rem;
+  transition: .5s all ease-in-out;
 }
 .timeLine.timeLine-four::before {
   background-color: rgb(200, 255, 0);
-  width: 15rem;
-  bottom: -85px;
+  bottom: -25px;
+  transition: .5s all ease-in-out;
 }
 .timeLine.timeLine-four:hover::before {
   box-shadow: 0 0 10px rgb(200, 255, 0);
+  width: 15rem;
+  transition: .5s all ease-in-out;
 }
 .timeLine.timeLine-five::before {
   background-color: rgb(0, 255, 128);
-  width: 8rem;
-  bottom: -100px;
+  bottom: -25px;
+  transition: .5s all ease-in-out;
 }
 .timeLine.timeLine-five:hover::before {
   box-shadow: 0 0 10px rgb(0, 255, 128);
+  width: 8rem;
+  transition: .5s all ease-in-out;
+}
+.mainTimeLine .contentTimeLine{
+  position: absolute;
+  bottom: 0;
+  color: #fff;
 }
